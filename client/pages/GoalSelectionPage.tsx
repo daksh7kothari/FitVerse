@@ -61,15 +61,15 @@ export default function GoalSelectionPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {goals.map((goal) => (
               <Card
-                key={goal.title}
-                hoverable
-                onClick={() => setSelectedGoal(goal.title)}
-                className={`cursor-pointer transition-all duration-300 border-2 ${
-                  selectedGoal === goal.title
-                    ? "border-fitverse-purple bg-purple-50 scale-105 shadow-lg"
-                    : "border-gray-200 hover:border-fitverse-purple"
-                }`}
-              >
+              key={goal.title}
+              hoverable
+              onClick={() => setSelectedGoal(goal.title)}
+              className={`cursor-pointer transition-all duration-300 border-2 p-8 ${
+                selectedGoal === goal.title
+                  ? "border-fitverse-coral-dark bg-red-50 scale-105 shadow-lg"
+                  : "border-gray-200 hover:border-fitverse-coral-dark"
+              }`}
+            >
                 <div className="flex items-start gap-4">
                   <div className="text-5xl">{goal.icon}</div>
                   <div className="flex-1">
