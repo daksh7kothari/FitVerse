@@ -56,9 +56,9 @@ export default function GameSimulationPage() {
                 </div>
 
                 <div className="relative z-10 text-center">
-                  <div className="text-6xl mb-4">🎮</div>
-                  <h2 className="text-3xl font-bold mb-4">Game Simulation Area</h2>
-                  <p className="text-lg opacity-90 mb-6 max-w-sm">
+                  <div className="text-7xl mb-5">🎮</div>
+                  <h2 className="text-3xl font-bold mb-5">Game Simulation Area</h2>
+                  <p className="text-lg opacity-90 mb-8 max-w-sm">
                     Webcam-based jump detection in real version
                   </p>
                   <div className="inline-block">
@@ -67,18 +67,18 @@ export default function GameSimulationPage() {
                 </div>
 
                 {/* Camera mock indicator */}
-                <div className="absolute top-4 right-4 flex items-center gap-2 bg-black bg-opacity-50 px-3 py-2 rounded-lg">
+                <div className="absolute top-6 right-6 flex items-center gap-2 bg-black bg-opacity-50 px-4 py-3 rounded-lg">
                   <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-semibold">CAMERA READY</span>
                 </div>
               </Card>
 
               {/* AI Feedback */}
-              <Card className="mt-6 bg-green-50 border-l-4 border-fitverse-green">
-                <div className="flex gap-3">
-                  <div className="text-3xl">✨</div>
+              <Card className="mt-8 bg-green-50 border-l-4 border-green-400 p-8">
+                <div className="flex gap-4">
+                  <div className="text-4xl">✨</div>
                   <div>
-                    <p className="font-bold text-fitverse-dark mb-1">
+                    <p className="font-bold text-fitverse-dark mb-2">
                       AI Feedback
                     </p>
                     <p className="text-gray-700">
@@ -90,40 +90,40 @@ export default function GameSimulationPage() {
             </div>
 
             {/* Right Side - Stats */}
-            <div className="space-y-6">
+            <div className="space-y-8">
               {/* Timer */}
-              <Card className="text-center bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
-                <p className="text-sm font-semibold text-gray-600 mb-2">⏱️ TIME</p>
-                <p className="text-4xl font-bold text-fitverse-blue font-mono">
+              <Card className="text-center bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200 p-8">
+                <p className="text-sm font-semibold text-gray-600 mb-3">⏱️ TIME</p>
+                <p className="text-5xl font-bold text-blue-600 font-mono">
                   {timeElapsed} / 05:00
                 </p>
               </Card>
 
               {/* Jump Counter */}
-              <Card className="text-center bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
-                <p className="text-sm font-semibold text-gray-600 mb-2">🎯 JUMPS</p>
-                <p className="text-4xl font-bold text-fitverse-orange font-mono">
+              <Card className="text-center bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200 p-8">
+                <p className="text-sm font-semibold text-gray-600 mb-3">🎯 JUMPS</p>
+                <p className="text-5xl font-bold text-orange-600 font-mono">
                   {jumpsCount}
                 </p>
               </Card>
 
               {/* Form Score */}
-              <Card className="text-center bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-                <p className="text-sm font-semibold text-gray-600 mb-2">
+              <Card className="text-center bg-gradient-to-br from-green-50 to-green-100 border-green-200 p-8">
+                <p className="text-sm font-semibold text-gray-600 mb-3">
                   ⭐ FORM SCORE
                 </p>
-                <p className="text-4xl font-bold text-fitverse-green font-mono">
+                <p className="text-5xl font-bold text-green-600 font-mono">
                   {formScore}%
                 </p>
               </Card>
 
               {/* Mission Info */}
-              <Card className="bg-purple-50 border-purple-200">
+              <Card className="bg-red-50 border-red-200 p-8">
                 <div className="text-center">
-                  <p className="text-sm font-semibold text-gray-600 mb-3">
+                  <p className="text-sm font-semibold text-gray-600 mb-4">
                     📊 SESSION INFO
                   </p>
-                  <div className="space-y-2 text-sm text-gray-700">
+                  <div className="space-y-3 text-sm text-gray-700">
                     <p>
                       <span className="font-semibold">Goal:</span>{" "}
                       {userData.goal}
@@ -153,11 +153,11 @@ export default function GameSimulationPage() {
           </div>
 
           {/* Progress Indicator */}
-          <div className="mt-12 flex justify-center gap-2">
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
+          <div className="mt-16 flex justify-center gap-2">
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
           </div>
         </div>
