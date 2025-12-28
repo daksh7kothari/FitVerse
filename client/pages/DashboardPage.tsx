@@ -41,21 +41,29 @@ export default function DashboardPage() {
   const mission = getMissionData();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-8 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-12 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Greeting */}
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold text-fitverse-dark mb-2">
-              Welcome to FitVerse, Explorer 👋
-            </h1>
-            <p className="text-gray-600 text-lg">
-              {userData.name ? `Ready for your mission, ${userData.name}?` : "Ready for your mission?"}
-            </p>
+          {/* Header with Progress Link */}
+          <div className="flex items-center justify-between mb-12">
+            <div>
+              <h1 className="text-4xl font-bold text-fitverse-dark mb-3">
+                Welcome to FitVerse, Explorer 👋
+              </h1>
+              <p className="text-gray-600 text-lg">
+                {userData.name ? `Ready for your mission, ${userData.name}?` : "Ready for your mission?"}
+              </p>
+            </div>
+            <button
+              onClick={() => navigate("/progress")}
+              className="text-fitverse-coral-dark font-semibold hover:underline whitespace-nowrap ml-4"
+            >
+              📊 View Progress
+            </button>
           </div>
 
           {/* Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-fitverse-pink to-fitverse-orange bg-clip-text text-transparent mb-2">
                 {userData.streak}
