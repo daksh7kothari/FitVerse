@@ -9,9 +9,15 @@ type EnergyLevel = "Tired" | "Okay" | "Good" | "Energetic";
 export default function WellnessCheckPage() {
   const navigate = useNavigate();
   const { updateUserData } = useAppContext();
-  const [selectedEnergy, setSelectedEnergy] = useState<EnergyLevel | null>(null);
+  const [selectedEnergy, setSelectedEnergy] = useState<EnergyLevel | null>(
+    null,
+  );
 
-  const energyOptions: { emoji: string; level: EnergyLevel; description: string }[] = [
+  const energyOptions: {
+    emoji: string;
+    level: EnergyLevel;
+    description: string;
+  }[] = [
     {
       emoji: "😴",
       level: "Tired",
@@ -83,13 +89,23 @@ export default function WellnessCheckPage() {
                   AI Adaptation Explained
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  FitVerse AI adjusts workout intensity based on your energy level:
+                  FitVerse AI adjusts workout intensity based on your energy
+                  level:
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                  <li>• <strong>Tired:</strong> Lower intensity, focus on recovery</li>
-                  <li>• <strong>Okay:</strong> Standard intensity mission</li>
-                  <li>• <strong>Good:</strong> Increased challenge and reps</li>
-                  <li>• <strong>Energetic:</strong> Maximum difficulty and performance</li>
+                  <li>
+                    • <strong>Tired:</strong> Lower intensity, focus on recovery
+                  </li>
+                  <li>
+                    • <strong>Okay:</strong> Standard intensity mission
+                  </li>
+                  <li>
+                    • <strong>Good:</strong> Increased challenge and reps
+                  </li>
+                  <li>
+                    • <strong>Energetic:</strong> Maximum difficulty and
+                    performance
+                  </li>
                 </ul>
               </div>
             </div>
@@ -97,15 +113,13 @@ export default function WellnessCheckPage() {
 
           {/* Continue Button */}
           <div className="text-center">
-            <FitverseButton
-              size="lg"
-              onClick={handleContinue}
-              className="mb-4"
-            >
+            <FitverseButton size="lg" onClick={handleContinue} className="mb-4">
               Continue
             </FitverseButton>
             {!selectedEnergy && (
-              <p className="text-gray-500 text-sm">Please select your energy level</p>
+              <p className="text-gray-500 text-sm">
+                Please select your energy level
+              </p>
             )}
           </div>
 

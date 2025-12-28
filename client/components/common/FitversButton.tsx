@@ -35,7 +35,12 @@ export default function FitverseButton({
 
   return (
     <button
-      className={clsx(baseStyles, variantStyles[variant], sizeStyles[size], className)}
+      className={clsx(
+        baseStyles,
+        variantStyles[variant],
+        sizeStyles[size],
+        className,
+      )}
       {...props}
     >
       {children}

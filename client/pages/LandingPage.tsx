@@ -35,7 +35,8 @@ export default function LandingPage() {
             Your AI-Powered Fitness Universe
           </p>
           <p className="text-lg md:text-xl text-gray-600 mb-16 leading-relaxed">
-            Traditional wellness programs fail because they are boring and one-size-fits-all.
+            Traditional wellness programs fail because they are boring and
+            one-size-fits-all.
             <br />
             <span className="font-semibold text-fitverse-coral-dark">
               FitVerse turns fitness into a personalized game powered by AI.
@@ -69,7 +70,8 @@ export default function LandingPage() {
             Ready to Transform Your Fitness?
           </h2>
           <p className="text-gray-600 mb-16 text-lg">
-            Start your personalized fitness journey today. Our AI will create custom missions just for you.
+            Start your personalized fitness journey today. Our AI will create
+            custom missions just for you.
           </p>
           <FitverseButton
             size="lg"

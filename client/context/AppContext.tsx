@@ -29,7 +29,11 @@ export interface UserData {
   name: string;
   fitnessLevel: "Beginner" | "Intermediate" | "Advanced";
   dailyTime: 15 | 30 | 45;
-  goal: "Weight Loss" | "Muscle Building" | "Cardio Health" | "General Wellness";
+  goal:
+    | "Weight Loss"
+    | "Muscle Building"
+    | "Cardio Health"
+    | "General Wellness";
   energyLevel?: "Tired" | "Okay" | "Good" | "Energetic";
   streak: number;
   level: number;

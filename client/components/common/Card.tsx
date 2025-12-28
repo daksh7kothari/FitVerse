@@ -16,8 +16,9 @@ export default function Card({
     <div
       className={clsx(
         "bg-white rounded-xl p-6 shadow-md border border-gray-100",
-        hoverable && "hover:shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer",
-        className
+        hoverable &&
+          "hover:shadow-xl hover:scale-105 transition-all duration-200 cursor-pointer",
+        className,
       )}
       {...props}
     >

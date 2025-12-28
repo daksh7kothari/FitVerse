@@ -74,7 +74,9 @@ export default function ResultsPage() {
               <Card className="border-l-4 border-purple-400 bg-purple-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark text-lg">⭐ XP Earned</p>
+                    <p className="font-bold text-fitverse-dark text-lg">
+                      ⭐ XP Earned
+                    </p>
                     <p className="text-gray-600 text-sm mt-1">
                       Keep the momentum going!
                     </p>
@@ -86,17 +88,25 @@ export default function ResultsPage() {
               <Card className="border-l-4 border-fitverse-coral-dark bg-red-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark text-lg">🔥 Streak Started</p>
-                    <p className="text-gray-600 text-sm mt-1">Day 1 of your journey</p>
+                    <p className="font-bold text-fitverse-dark text-lg">
+                      🔥 Streak Started
+                    </p>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Day 1 of your journey
+                    </p>
                   </div>
-                  <p className="text-4xl font-bold text-fitverse-coral-dark">Day 1</p>
+                  <p className="text-4xl font-bold text-fitverse-coral-dark">
+                    Day 1
+                  </p>
                 </div>
               </Card>
 
               <Card className="border-l-4 border-orange-400 bg-orange-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark text-lg">🏅 Achievement Unlocked</p>
+                    <p className="font-bold text-fitverse-dark text-lg">
+                      🏅 Achievement Unlocked
+                    </p>
                     <p className="text-gray-600 text-sm mt-1">
                       First Steps - Complete your first mission
                     </p>
@@ -118,8 +128,9 @@ export default function ResultsPage() {
                 <p className="text-gray-700 leading-relaxed">
                   Your performance shows good endurance and excellent form
                   consistency. Tomorrow's mission will slightly increase
-                  difficulty to keep challenging your cardiovascular system while
-                  maintaining your enthusiasm. You're on track for great results!
+                  difficulty to keep challenging your cardiovascular system
+                  while maintaining your enthusiasm. You're on track for great
+                  results!
                 </p>
               </div>
             </div>
@@ -134,10 +145,7 @@ export default function ResultsPage() {
             >
               Back to Dashboard
             </FitverseButton>
-            <FitverseButton
-              size="lg"
-              onClick={handleViewProgress}
-            >
+            <FitverseButton size="lg" onClick={handleViewProgress}>
               View Progress
             </FitverseButton>
           </div>

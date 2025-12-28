@@ -20,7 +20,9 @@ export default function StatisticsCard({
 }: StatisticsCardProps) {
   return (
     <Card className={`text-center ${bgGradient} p-8`}>
-      <p className="text-sm font-semibold text-gray-600 mb-3">{icon} {label}</p>
+      <p className="text-sm font-semibold text-gray-600 mb-3">
+        {icon} {label}
+      </p>
       <p className={`text-4xl font-bold ${textColor} font-mono mb-2`}>
         {value}
       </p>

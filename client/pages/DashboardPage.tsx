@@ -14,7 +14,8 @@ export default function DashboardPage() {
         name: "Burner Circuit Quest",
         game: "CalorieBurn",
         duration: 10,
-        description: "High-intensity interval training to maximize calorie burn",
+        description:
+          "High-intensity interval training to maximize calorie burn",
       },
       "Muscle Building": {
         name: "Strength Titan Mission",
@@ -51,7 +52,9 @@ export default function DashboardPage() {
                 Welcome to FitVerse, Explorer 👋
               </h1>
               <p className="text-gray-600 text-lg">
-                {userData.name ? `Ready for your mission, ${userData.name}?` : "Ready for your mission?"}
+                {userData.name
+                  ? `Ready for your mission, ${userData.name}?`
+                  : "Ready for your mission?"}
               </p>
             </div>
             <button
@@ -93,7 +96,9 @@ export default function DashboardPage() {
             <div className="space-y-8">
               {/* Mission Title */}
               <div>
-                <p className="text-sm font-semibold text-gray-500 mb-3">MISSION NAME</p>
+                <p className="text-sm font-semibold text-gray-500 mb-3">
+                  MISSION NAME
+                </p>
                 <h3 className="text-2xl font-bold text-fitverse-dark">
                   {mission.name}
                 </h3>
@@ -102,19 +107,25 @@ export default function DashboardPage() {
               {/* Mission Details */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <p className="text-sm font-semibold text-gray-500 mb-2">🎮 GAME</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-2">
+                    🎮 GAME
+                  </p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {mission.game}
                   </p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <p className="text-sm font-semibold text-gray-500 mb-2">⏱️ DURATION</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-2">
+                    ⏱️ DURATION
+                  </p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {mission.duration} minutes
                   </p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <p className="text-sm font-semibold text-gray-500 mb-2">🎯 GOAL</p>
+                  <p className="text-sm font-semibold text-gray-500 mb-2">
+                    🎯 GOAL
+                  </p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {userData.goal}
                   </p>

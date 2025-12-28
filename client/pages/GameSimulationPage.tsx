@@ -20,7 +20,7 @@ export default function GameSimulationPage() {
       setTimeElapsed(
         `${minutes.toString().padStart(2, "0")}:${seconds
           .toString()
-          .padStart(2, "0")}`
+          .padStart(2, "0")}`,
       );
       setJumpsCount(Math.floor(Math.random() * 80) + 30);
       setFormScore(Math.floor(Math.random() * 20) + 75);
@@ -41,7 +41,9 @@ export default function GameSimulationPage() {
             <h1 className="text-3xl md:text-4xl font-bold text-fitverse-dark">
               🎮 {missionName} — Cardio Mission
             </h1>
-            <p className="text-gray-600 mt-3">In real version, webcam-based jump detection runs here</p>
+            <p className="text-gray-600 mt-3">
+              In real version, webcam-based jump detection runs here
+            </p>
           </div>
 
           {/* Game Layout */}
@@ -52,12 +54,17 @@ export default function GameSimulationPage() {
                 {/* Animated background elements */}
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute top-10 left-10 w-20 h-20 border-2 border-purple-400 rounded-full animate-pulse"></div>
-                  <div className="absolute bottom-20 right-20 w-32 h-32 border-2 border-pink-400 rounded-full animate-pulse" style={{animationDelay: "0.5s"}}></div>
+                  <div
+                    className="absolute bottom-20 right-20 w-32 h-32 border-2 border-pink-400 rounded-full animate-pulse"
+                    style={{ animationDelay: "0.5s" }}
+                  ></div>
                 </div>
 
                 <div className="relative z-10 text-center">
                   <div className="text-7xl mb-5">🎮</div>
-                  <h2 className="text-3xl font-bold mb-5">Game Simulation Area</h2>
+                  <h2 className="text-3xl font-bold mb-5">
+                    Game Simulation Area
+                  </h2>
                   <p className="text-lg opacity-90 mb-8 max-w-sm">
                     Webcam-based jump detection in real version
                   </p>
@@ -82,7 +89,8 @@ export default function GameSimulationPage() {
                       AI Feedback
                     </p>
                     <p className="text-gray-700">
-                      Great form! Keep your knees slightly bent. Your rhythm is improving!
+                      Great form! Keep your knees slightly bent. Your rhythm is
+                      improving!
                     </p>
                   </div>
                 </div>
@@ -93,7 +101,9 @@ export default function GameSimulationPage() {
             <div className="space-y-8">
               {/* Timer */}
               <Card className="text-center bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200 p-8">
-                <p className="text-sm font-semibold text-gray-600 mb-3">⏱️ TIME</p>
+                <p className="text-sm font-semibold text-gray-600 mb-3">
+                  ⏱️ TIME
+                </p>
                 <p className="text-5xl font-bold text-blue-600 font-mono">
                   {timeElapsed} / 05:00
                 </p>
@@ -101,7 +111,9 @@ export default function GameSimulationPage() {
 
               {/* Jump Counter */}
               <Card className="text-center bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200 p-8">
-                <p className="text-sm font-semibold text-gray-600 mb-3">🎯 JUMPS</p>
+                <p className="text-sm font-semibold text-gray-600 mb-3">
+                  🎯 JUMPS
+                </p>
                 <p className="text-5xl font-bold text-orange-600 font-mono">
                   {jumpsCount}
                 </p>

@@ -62,30 +62,29 @@ export default function OnboardingPage() {
                   Fitness Level
                 </label>
                 <div className="space-y-4">
-                  {(
-                    [
-                      "Beginner",
-                      "Intermediate",
-                      "Advanced",
-                    ] as const
-                  ).map((level) => (
-                    <label key={level} className="flex items-center gap-3 cursor-pointer">
-                      <input
-                        type="radio"
-                        name="fitnessLevel"
-                        value={level}
-                        checked={formData.fitnessLevel === level}
-                        onChange={(e) =>
-                          setFormData({
-                            ...formData,
-                            fitnessLevel: e.target.value as any,
-                          })
-                        }
-                        className="w-5 h-5 cursor-pointer accent-fitverse-purple"
-                      />
-                      <span className="text-lg text-gray-700">{level}</span>
-                    </label>
-                  ))}
+                  {(["Beginner", "Intermediate", "Advanced"] as const).map(
+                    (level) => (
+                      <label
+                        key={level}
+                        className="flex items-center gap-3 cursor-pointer"
+                      >
+                        <input
+                          type="radio"
+                          name="fitnessLevel"
+                          value={level}
+                          checked={formData.fitnessLevel === level}
+                          onChange={(e) =>
+                            setFormData({
+                              ...formData,
+                              fitnessLevel: e.target.value as any,
+                            })
+                          }
+                          className="w-5 h-5 cursor-pointer accent-fitverse-purple"
+                        />
+                        <span className="text-lg text-gray-700">{level}</span>
+                      </label>
+                    ),
+                  )}
                 </div>
               </div>
 
