@@ -26,18 +26,18 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-fitverse-light via-white to-fitverse-light">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-20 pb-16 md:pt-32 md:pb-20 text-center">
+      <section className="container mx-auto px-4 pt-28 pb-20 md:pt-40 md:pb-28 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-fitverse-purple to-fitverse-pink bg-clip-text text-transparent mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-fitverse-coral-dark to-fitverse-coral bg-clip-text text-transparent mb-8 animate-fade-in">
             FitVerse
           </h1>
-          <p className="text-xl md:text-2xl font-bold text-fitverse-dark mb-4">
+          <p className="text-xl md:text-2xl font-bold text-fitverse-dark mb-6">
             Your AI-Powered Fitness Universe
           </p>
-          <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 mb-16 leading-relaxed">
             Traditional wellness programs fail because they are boring and one-size-fits-all.
             <br />
-            <span className="font-semibold text-fitverse-purple">
+            <span className="font-semibold text-fitverse-coral-dark">
               FitVerse turns fitness into a personalized game powered by AI.
             </span>
           </p>
@@ -45,8 +45,8 @@ export default function LandingPage() {
       </section>
 
       {/* Feature Cards */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <section className="container mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
           {features.map((feature, index) => (
             <Card
               key={index}
