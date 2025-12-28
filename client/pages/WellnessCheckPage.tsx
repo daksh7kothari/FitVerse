@@ -42,12 +42,12 @@ export default function WellnessCheckPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-8 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-12 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-fitverse-dark mb-4">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl font-bold text-fitverse-dark mb-6">
               How Are You Feeling Today?
             </h1>
             <p className="text-gray-600 text-lg">
@@ -56,7 +56,7 @@ export default function WellnessCheckPage() {
           </div>
 
           {/* Energy Scale */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             {energyOptions.map((option) => (
               <button
                 key={option.level}
