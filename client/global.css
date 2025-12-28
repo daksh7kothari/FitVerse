@@ -58,12 +58,11 @@
 
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* FitVerse Custom Colors */
-    --fitverse-purple: 260 91% 52%;
-    --fitverse-pink: 340 85% 56%;
-    --fitverse-blue: 210 95% 55%;
-    --fitverse-orange: 40 95% 54%;
-    --fitverse-green: 142 76% 36%;
+    /* FitVerse Custom Colors - Peachy/Coral Palette */
+    --fitverse-light-peach: 35 100% 85%;
+    --fitverse-peach: 8 100% 82%;
+    --fitverse-coral: 0 99% 79%;
+    --fitverse-coral-dark: 0 100% 68%;
     --fitverse-light: 0 0% 98%;
     --fitverse-dark: 240 10% 15%;
   }
