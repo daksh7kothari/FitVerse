@@ -33,22 +33,22 @@ export default function GameSimulationPage() {
     userData.goal === "Cardio Health" ? "JumpVerse" : "Fitness Mission";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-8 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-12 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-fitverse-dark">
               🎮 {missionName} — Cardio Mission
             </h1>
-            <p className="text-gray-600 mt-2">In real version, webcam-based jump detection runs here</p>
+            <p className="text-gray-600 mt-3">In real version, webcam-based jump detection runs here</p>
           </div>
 
           {/* Game Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Left Side - Game Area */}
             <div className="lg:col-span-2">
-              <Card className="h-96 bg-gradient-to-br from-purple-900 to-pink-900 text-white flex flex-col items-center justify-center relative overflow-hidden">
+              <Card className="h-96 bg-gradient-to-br from-red-800 to-red-700 text-white flex flex-col items-center justify-center relative overflow-hidden p-8">
                 {/* Animated background elements */}
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute top-10 left-10 w-20 h-20 border-2 border-purple-400 rounded-full animate-pulse"></div>
