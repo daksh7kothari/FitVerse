@@ -63,12 +63,12 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
+      <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-fitverse-dark mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-fitverse-dark mb-10">
             Ready to Transform Your Fitness?
           </h2>
-          <p className="text-gray-600 mb-12 text-lg">
+          <p className="text-gray-600 mb-16 text-lg">
             Start your personalized fitness journey today. Our AI will create custom missions just for you.
           </p>
           <FitverseButton
@@ -82,7 +82,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-fitverse-purple to-fitverse-pink text-white py-8 mt-16">
+      <footer className="bg-gradient-to-r from-fitverse-coral-dark to-fitverse-coral text-white py-10 mt-20">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm opacity-90">
             © 2024 FitVerse. Built for Hackathon with ❤️ by Builder.io
