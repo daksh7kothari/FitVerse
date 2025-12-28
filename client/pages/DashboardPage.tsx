@@ -85,8 +85,8 @@ export default function DashboardPage() {
           </div>
 
           {/* Today's Mission Card */}
-          <Card className="border-2 border-fitverse-purple mb-12 overflow-hidden">
-            <div className="bg-gradient-to-r from-fitverse-purple to-fitverse-pink text-white p-6 mb-6 -mx-6 -mt-6">
+          <Card className="border-2 border-fitverse-coral-dark mb-16 overflow-hidden">
+            <div className="bg-gradient-to-r from-fitverse-coral-dark to-fitverse-coral text-white p-8 mb-8 -mx-8 -mt-8">
               <h2 className="text-3xl font-bold">🎯 Today's Mission</h2>
             </div>
 
