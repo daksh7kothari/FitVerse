@@ -42,7 +42,7 @@ export default function OnboardingPage() {
             <form onSubmit={handleSubmit} className="space-y-10">
               {/* Name Input */}
               <div>
-                <label className="block text-sm font-semibold text-fitverse-dark mb-3">
+                <label className="block text-sm font-semibold text-fitverse-dark mb-4">
                   Your Name
                 </label>
                 <input
@@ -52,16 +52,16 @@ export default function OnboardingPage() {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   placeholder="Enter your name"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-fitverse-purple text-lg"
+                  className="w-full px-5 py-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-fitverse-coral-dark text-lg"
                 />
               </div>
 
               {/* Fitness Level */}
               <div>
-                <label className="block text-sm font-semibold text-fitverse-dark mb-4">
+                <label className="block text-sm font-semibold text-fitverse-dark mb-5">
                   Fitness Level
                 </label>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {(
                     [
                       "Beginner",
