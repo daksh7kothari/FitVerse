@@ -61,13 +61,13 @@ export default function WellnessCheckPage() {
               <button
                 key={option.level}
                 onClick={() => setSelectedEnergy(option.level)}
-                className={`p-6 rounded-2xl transition-all duration-300 transform ${
+                className={`p-8 rounded-2xl transition-all duration-300 transform ${
                   selectedEnergy === option.level
-                    ? "bg-gradient-to-br from-fitverse-purple to-fitverse-pink text-white scale-110 shadow-xl"
-                    : "bg-white border-2 border-gray-200 hover:border-fitverse-purple hover:scale-105"
+                    ? "bg-gradient-to-br from-fitverse-coral-dark to-fitverse-coral text-white scale-110 shadow-xl"
+                    : "bg-white border-2 border-gray-200 hover:border-fitverse-coral-dark hover:scale-105"
                 }`}
               >
-                <div className="text-5xl mb-3">{option.emoji}</div>
+                <div className="text-6xl mb-4">{option.emoji}</div>
                 <p className="font-bold text-lg">{option.level}</p>
                 <p className="text-sm opacity-75">{option.description}</p>
               </button>
@@ -75,17 +75,17 @@ export default function WellnessCheckPage() {
           </div>
 
           {/* AI Explanation Card */}
-          <Card className="border-l-4 border-fitverse-blue bg-blue-50 mb-12">
+          <Card className="border-l-4 border-blue-400 bg-blue-50 mb-16 p-8">
             <div className="flex gap-4">
-              <div className="text-4xl">🧠</div>
+              <div className="text-5xl">🧠</div>
               <div>
-                <h3 className="font-bold text-fitverse-dark text-lg mb-2">
+                <h3 className="font-bold text-fitverse-dark text-lg mb-3">
                   AI Adaptation Explained
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   FitVerse AI adjusts workout intensity based on your energy level:
                 </p>
-                <ul className="mt-3 space-y-1 text-sm text-gray-700">
+                <ul className="mt-4 space-y-2 text-sm text-gray-700">
                   <li>• <strong>Tired:</strong> Lower intensity, focus on recovery</li>
                   <li>• <strong>Okay:</strong> Standard intensity mission</li>
                   <li>• <strong>Good:</strong> Increased challenge and reps</li>
@@ -110,11 +110,11 @@ export default function WellnessCheckPage() {
           </div>
 
           {/* Progress Indicator */}
-          <div className="mt-12 flex justify-center gap-2">
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
+          <div className="mt-16 flex justify-center gap-2">
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
           </div>
         </div>
