@@ -1,5 +1,30 @@
 import React, { createContext, useState, ReactNode } from "react";
 
+export interface WorkoutRecord {
+  id: string;
+  date: string;
+  duration: number;
+  calories: number;
+  formScore: number;
+  missionName: string;
+  goal: string;
+}
+
+export interface Achievement {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  unlockedDate?: string;
+}
+
+export interface WeeklyStat {
+  date: string;
+  totalCalories: number;
+  totalMissions: number;
+  avgFormScore: number;
+}
+
 export interface UserData {
   name: string;
   fitnessLevel: "Beginner" | "Intermediate" | "Advanced";
@@ -9,6 +34,9 @@ export interface UserData {
   streak: number;
   level: number;
   totalXP: number;
+  workoutHistory: WorkoutRecord[];
+  achievements: Achievement[];
+  weeklyStats: WeeklyStat[];
 }
 
 interface AppContextType {
