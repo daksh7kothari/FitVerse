@@ -19,13 +19,13 @@ export default function ResultsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-8 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-fitverse-light to-white pt-12 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Celebration Header */}
-          <div className="text-center mb-12 animate-slide-up">
-            <div className="text-8xl mb-4">🎉</div>
-            <h1 className="text-4xl md:text-5xl font-bold text-fitverse-dark mb-4">
+          <div className="text-center mb-16 animate-slide-up">
+            <div className="text-9xl mb-6">🎉</div>
+            <h1 className="text-4xl md:text-5xl font-bold text-fitverse-dark mb-6">
               Mission Complete!
             </h1>
             <p className="text-xl text-gray-600">
@@ -34,7 +34,7 @@ export default function ResultsPage() {
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-16">
             <Card className="text-center bg-gradient-to-br from-orange-50 to-orange-100">
               <p className="text-sm font-semibold text-gray-600 mb-2">
                 Total Jumps
