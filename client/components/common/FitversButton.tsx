@@ -20,11 +20,11 @@ export default function FitverseButton({
 
   const variantStyles = {
     primary:
-      "bg-gradient-to-r from-fitverse-purple to-fitverse-pink text-white hover:shadow-lg hover:scale-105 active:scale-95",
+      "bg-gradient-to-r from-fitverse-coral-dark to-fitverse-coral text-white hover:shadow-lg hover:scale-105 active:scale-95",
     secondary:
-      "bg-gradient-to-r from-fitverse-blue to-fitverse-blue text-white hover:shadow-lg hover:scale-105 active:scale-95",
+      "bg-gradient-to-r from-fitverse-peach to-fitverse-light-peach text-black hover:shadow-lg hover:scale-105 active:scale-95",
     outline:
-      "border-2 border-fitverse-purple text-fitverse-purple hover:bg-fitverse-purple hover:text-white active:scale-95",
+      "border-2 border-fitverse-coral-dark text-fitverse-coral-dark hover:bg-fitverse-coral-dark hover:text-white active:scale-95",
   };
 
   const sizeStyles = {
