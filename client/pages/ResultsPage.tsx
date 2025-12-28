@@ -66,53 +66,53 @@ export default function ResultsPage() {
           </div>
 
           {/* Rewards Section */}
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-fitverse-dark mb-6">
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-fitverse-dark mb-8">
               🏆 Rewards Earned
             </h2>
-            <div className="space-y-4">
-              <Card className="border-l-4 border-fitverse-purple bg-purple-50">
+            <div className="space-y-6">
+              <Card className="border-l-4 border-purple-400 bg-purple-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark">⭐ XP Earned</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="font-bold text-fitverse-dark text-lg">⭐ XP Earned</p>
+                    <p className="text-gray-600 text-sm mt-1">
                       Keep the momentum going!
                     </p>
                   </div>
-                  <p className="text-3xl font-bold text-fitverse-purple">+50</p>
+                  <p className="text-4xl font-bold text-purple-600">+50</p>
                 </div>
               </Card>
 
-              <Card className="border-l-4 border-fitverse-pink bg-pink-50">
+              <Card className="border-l-4 border-fitverse-coral-dark bg-red-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark">🔥 Streak Started</p>
-                    <p className="text-gray-600 text-sm">Day 1 of your journey</p>
+                    <p className="font-bold text-fitverse-dark text-lg">🔥 Streak Started</p>
+                    <p className="text-gray-600 text-sm mt-1">Day 1 of your journey</p>
                   </div>
-                  <p className="text-3xl font-bold text-fitverse-pink">Day 1</p>
+                  <p className="text-4xl font-bold text-fitverse-coral-dark">Day 1</p>
                 </div>
               </Card>
 
-              <Card className="border-l-4 border-fitverse-orange bg-orange-50">
+              <Card className="border-l-4 border-orange-400 bg-orange-50 p-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-fitverse-dark">🏅 Achievement Unlocked</p>
-                    <p className="text-gray-600 text-sm">
+                    <p className="font-bold text-fitverse-dark text-lg">🏅 Achievement Unlocked</p>
+                    <p className="text-gray-600 text-sm mt-1">
                       First Steps - Complete your first mission
                     </p>
                   </div>
-                  <p className="text-2xl">🌟</p>
+                  <p className="text-3xl">🌟</p>
                 </div>
               </Card>
             </div>
           </div>
 
           {/* AI Insight */}
-          <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-fitverse-blue mb-12">
-            <div className="flex gap-4">
-              <div className="text-4xl">🧠</div>
+          <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-400 mb-16 p-8">
+            <div className="flex gap-5">
+              <div className="text-5xl">🧠</div>
               <div>
-                <h3 className="font-bold text-fitverse-dark text-lg mb-2">
+                <h3 className="font-bold text-fitverse-dark text-lg mb-3">
                   AI Insight for Tomorrow
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -126,7 +126,7 @@ export default function ResultsPage() {
           </Card>
 
           {/* Action Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
             <FitverseButton
               variant="outline"
               size="lg"
@@ -143,12 +143,12 @@ export default function ResultsPage() {
           </div>
 
           {/* Progress Indicator */}
-          <div className="mt-12 flex justify-center gap-2">
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
+          <div className="mt-16 flex justify-center gap-2">
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
           </div>
         </div>
       </div>
