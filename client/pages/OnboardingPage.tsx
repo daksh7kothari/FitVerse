@@ -91,10 +91,10 @@ export default function OnboardingPage() {
 
               {/* Daily Time Available */}
               <div>
-                <label className="block text-sm font-semibold text-fitverse-dark mb-4">
+                <label className="block text-sm font-semibold text-fitverse-dark mb-5">
                   Daily Time Available
                 </label>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-5">
                   {([15, 30, 45] as const).map((time) => (
                     <button
                       key={time}
@@ -102,9 +102,9 @@ export default function OnboardingPage() {
                       onClick={() =>
                         setFormData({ ...formData, dailyTime: time })
                       }
-                      className={`py-4 px-4 rounded-lg font-semibold text-center transition-all duration-200 ${
+                      className={`py-5 px-4 rounded-lg font-semibold text-center transition-all duration-200 ${
                         formData.dailyTime === time
-                          ? "bg-fitverse-purple text-white scale-105"
+                          ? "bg-fitverse-coral-dark text-white scale-105"
                           : "bg-gray-100 text-fitverse-dark hover:bg-gray-200"
                       }`}
                     >
@@ -117,7 +117,7 @@ export default function OnboardingPage() {
               </div>
 
               {/* Submit Button */}
-              <div className="pt-8">
+              <div className="pt-10">
                 <FitverseButton size="lg" className="w-full" type="submit">
                   👉 Continue
                 </FitverseButton>
@@ -126,7 +126,7 @@ export default function OnboardingPage() {
           </Card>
 
           {/* Progress Indicator */}
-          <div className="mt-8 flex justify-center gap-2">
+          <div className="mt-12 flex justify-center gap-2">
             <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
