@@ -14,7 +14,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="min-h-screen bg-fitverse-light">
       {showHeader && (
-        <header className="bg-gradient-to-r from-fitverse-purple to-fitverse-pink text-white shadow-lg">
+        <header className="bg-gradient-to-r from-fitverse-coral-dark to-fitverse-coral text-white shadow-lg">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-bold">✨ FitVerse</h1>
