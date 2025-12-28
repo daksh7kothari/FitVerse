@@ -90,31 +90,31 @@ export default function DashboardPage() {
               <h2 className="text-3xl font-bold">🎯 Today's Mission</h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               {/* Mission Title */}
               <div>
-                <p className="text-sm font-semibold text-gray-500 mb-2">MISSION NAME</p>
+                <p className="text-sm font-semibold text-gray-500 mb-3">MISSION NAME</p>
                 <h3 className="text-2xl font-bold text-fitverse-dark">
                   {mission.name}
                 </h3>
               </div>
 
               {/* Mission Details */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <p className="text-sm font-semibold text-gray-500 mb-1">🎮 GAME</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <p className="text-sm font-semibold text-gray-500 mb-2">🎮 GAME</p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {mission.game}
                   </p>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <p className="text-sm font-semibold text-gray-500 mb-1">⏱️ DURATION</p>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <p className="text-sm font-semibold text-gray-500 mb-2">⏱️ DURATION</p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {mission.duration} minutes
                   </p>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <p className="text-sm font-semibold text-gray-500 mb-1">🎯 GOAL</p>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <p className="text-sm font-semibold text-gray-500 mb-2">🎯 GOAL</p>
                   <p className="text-lg font-bold text-fitverse-dark">
                     {userData.goal}
                   </p>
@@ -122,8 +122,8 @@ export default function DashboardPage() {
               </div>
 
               {/* AI Reason */}
-              <div className="bg-blue-50 border-l-4 border-fitverse-blue p-4 rounded">
-                <p className="text-sm font-semibold text-fitverse-blue mb-2">
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+                <p className="text-sm font-semibold text-blue-600 mb-2">
                   🧠 AI REASON
                 </p>
                 <p className="text-gray-700">
@@ -135,7 +135,7 @@ export default function DashboardPage() {
               </div>
 
               {/* Start Button */}
-              <div className="pt-4">
+              <div className="pt-6">
                 <FitverseButton
                   size="lg"
                   className="w-full"
@@ -149,9 +149,9 @@ export default function DashboardPage() {
 
           {/* Progress Indicator */}
           <div className="flex justify-center gap-2">
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
-            <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
+            <div className="h-2 w-8 bg-fitverse-coral-dark rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
           </div>
