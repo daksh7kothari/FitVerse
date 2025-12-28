@@ -99,7 +99,7 @@ export default function GoalSelectionPage() {
           </div>
 
           {/* Progress Indicator */}
-          <div className="mt-12 flex justify-center gap-2">
+          <div className="mt-16 flex justify-center gap-2">
             <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
             <div className="h-2 w-8 bg-fitverse-purple rounded-full"></div>
             <div className="h-2 w-8 bg-gray-300 rounded-full"></div>
