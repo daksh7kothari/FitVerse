@@ -46,6 +46,40 @@ interface AppContextType {
 
 export const AppContext = createContext<AppContextType | undefined>(undefined);
 
+// Default achievements
+const DEFAULT_ACHIEVEMENTS: Achievement[] = [
+  {
+    id: "first-steps",
+    name: "First Steps",
+    description: "Complete your first mission",
+    icon: "👣",
+  },
+  {
+    id: "week-warrior",
+    name: "Week Warrior",
+    description: "Complete 7 missions in a week",
+    icon: "⚔️",
+  },
+  {
+    id: "consistency-king",
+    name: "Consistency King",
+    description: "Maintain a 7-day streak",
+    icon: "👑",
+  },
+  {
+    id: "perfect-form",
+    name: "Perfect Form",
+    description: "Achieve 95% form score",
+    icon: "💎",
+  },
+  {
+    id: "calorie-crusher",
+    name: "Calorie Crusher",
+    description: "Burn 500 calories total",
+    icon: "🔥",
+  },
+];
+
 export function AppContextProvider({ children }: { children: ReactNode }) {
   const [userData, setUserData] = useState<UserData>({
     name: "",
@@ -55,6 +89,9 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
     streak: 0,
     level: 1,
     totalXP: 0,
+    workoutHistory: [],
+    achievements: DEFAULT_ACHIEVEMENTS,
+    weeklyStats: [],
   });
 
   const updateUserData = (data: Partial<UserData>) => {
